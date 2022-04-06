@@ -3,17 +3,19 @@
     --title-text-color:#757575;
     --accent-color:#2196F3;
     --logo-color: #2196F3;
-    --primary-bg-color:#E5E5E5;
+    --primary-bg-color:#fff;
+    --secondary-text-color: #fff;
+    --secondary-bg-color:#F5F4FA;
+    --button-bg-color:#188CE8;
+    --banner-bg-color:#2F303A;
 }
 
 body {
-    background-color: var (--primary-bg-color);
-    color: var (-primary-text-color);
+    background-color:var(--primary-bg-color);
+    color:var(--primary-text-color);
     font-family: Roboto, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+    font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -32,14 +34,14 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:rgba(33, 33, 33, 1);
+    color:var(--primary-text-color);
 }
 
 .button:focus {
     color: var(--accent-color);
 }
 .button:hover {
-    background-color: #FFF;
+    background-color: var(--secondary-text-color);
     color: var(--accent-color);
 }
 
@@ -48,10 +50,7 @@ a {
 }
 
 .title {
-    color:#FFF;
-    font-family: Roboto, sans-serif;
-    font-family: 'Roboto';
-    font-style: normal;
+    color: var(--secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -66,8 +65,7 @@ a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color:black;
+    color:var(--primary-text-color);
 }
 
 .part-logo-header {
@@ -80,22 +78,21 @@ a {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color:white;
+    color:var(--secondary-text-color);
 }
 
 .part-logo-footer {
-    color:#2196F3;
+    color:var(--logo-color);
 }
 
 :link:hover {
     background-color:transparent;
-    color:rgba(33, 150, 243, 1);
+    color:var(--accent-color);
 }
 
 .banner .banner-btn {
-    color:#FFFFFF;
-    background-color: rgba(33, 150, 243, 1);
+    color:var(--secondary-text-color);
+    background-color: var(--accent-color);
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -109,31 +106,25 @@ a {
 }
 
 .banner-btn:hover {
-    background: #188CE8;
+    background: var(--button-bg-color);
 }
 
 .banner-btn:focus {
-    background: #188CE8;
+    background: var(--button-bg-color);
 }
 
-.contact-info-footer,
-.contact-info-header {
-font-family: inherit;
-font-style: normal;
+.header-mail,
+.header-phone {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: rgba(117, 117, 117, 1);
-}
-
-.page-footer {
-    background-color:rgba(47, 48, 58, 1);
+color: var(--title-text-color);
 }
 
 .feature,
 .portfolio {
-    color: #FFF;
+    color: var(--secondary-text-color);
 }
 .opacity:hover,
 .opacity:focus {
@@ -144,76 +135,62 @@ color: rgba(117, 117, 117, 1);
     color:transparent;
 }
 
-.solutions .solution {
-    font-family: inherit;
-    font-style: normal;
+.solutions .solution{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:rgba(33, 33, 33, 1);
+    color:var(--primary-text-color);
 }
 
-.solution-text {
-font-family: inherit;
-font-style: normal;
-font-weight: 400;
+.solution-text{
 font-size: 14px;
 line-height: 2;
-color:rgba(117, 117, 117, 1);
+color:var(--title-text-color);
 }
 
 .service,
 .features {
-background-color:rgba(255, 255, 255, 1);
+background-color:var(--secondary-text-color);
 }
 
 .service-info,
 .team-info {
-    font-family: inherit;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: rgba(33, 33, 33, 1);
+    color: var(--primary-text-color);
 }
 
     .our-team {
-        background-color: rgba(245, 244, 250, 1);
+        background-color:var(--secondary-bg-color);
     }
 
-    .team-name {
-font-family: inherit;
-font-style: normal;
+    .team-name{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
-letter-spacing: 0.03em;
-color:rgba(33, 33, 33, 1);
+color:var(--primary-text-color);
     }
 
-    .team-position {
-font-family: inherit;
-font-style: normal;
-font-weight: 400;
+    .team-position{
 font-size: 16px;
 line-height: 1.19;
-color:rgba(117, 117, 117, 1);
+color: var(--title-text-color);
     }
 
 .team-image {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--secondary-text-color);
 }
 
 .contact-info {
-    color: #757575;
+    color: var(--title-text-color);
 }
 
-.banner {
-    background-color: rgba(47, 48, 58, 1);
+.banner,
+.page-footer {
+    background-color: var(--banner-bg-color);
 }
 
 .footer-address {
@@ -223,7 +200,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 1);
+color: var(--secondary-text-color);
 }
 
 .footer-mail,
@@ -238,48 +215,44 @@ color: rgba(255, 255, 255, 1);
 }
 
 .portfolio-btn {
-    background-color: rgba(245, 244, 250, 1);
-    color: rgba(33, 33, 33, 1);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
     border: none;
 }
 
 .portfolio-btn:focus {
-    color:rgb(33, 150, 243);
+    color:var(--accent-color);
 }
 .portfolio-btn:hover {
-    background-color: rgb(33, 150, 243);
-    color:#FFF;
+    background-color:var(--accent-color);
+    color:var(--secondary-text-color);
 }
 
 .portfolio-options {
-font-family: inherit;
-font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-letter-spacing: 0.03em;
-color:rgba(33, 33, 33, 1);
+color:var(--primary-text-color);
 }
 
 .project-name {
-font-family: inherit;
-font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
-color:rgba(33, 33, 33, 1);
+color:var(--primary-text-color);
 }
 
 .web-site,
 .app,
 .design,
 .marketing {
-font-family: inherit;
-font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
-letter-spacing: 0.03em;
-color:rgba(117, 117, 117, 1);
+color: var(--title-text-color);
 }
